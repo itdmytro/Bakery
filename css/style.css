@@ -360,9 +360,31 @@ body {
 	font-size: 24px;
 	margin: 0 0 20px;
 }
+
 .formats-text {
 	color: var(--primary-light);
 }
+
+.slider-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	width: 44px;
+	height: 44px;
+	background-color: transparent;
+	border: 1px solid var(--primary-dark);
+	fill: var(--primary-dark);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-button:hover {
+	background-color: var(--primary-dark);
+	fill: var(--primary-light);
+	transition: all 0.3s;
+}
+
 
 /* Contacts section */
 
@@ -379,11 +401,6 @@ body {
 	padding: 32px 24px;
 }
 
-.social-link:hover svg * {
-	fill: var(--primary-brand);
-	transition: all 0.3s;
-}
-
 .address-link {
 	color: var(--primary-light);
 	font-size: 16px;
@@ -392,6 +409,7 @@ body {
 
 .address-link:hover {
 	color: var(--primary-brand);
+	transition: all 0.3s;
 }
 
 .copyright {
@@ -424,6 +442,15 @@ body {
 
 .address-block {
 	flex-basis: 210px;
+}
+
+.footer-icon {
+	fill: var(--primary-light);
+}
+
+.footer-icon:hover {
+	fill: var(--primary-brand);
+	transition: all 0.3s;
 }
 
 .policy {
