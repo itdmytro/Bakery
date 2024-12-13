@@ -91,6 +91,12 @@ a, a:hover {
 	--secondary-light: #CFCFBC;
 }
 
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 body {
 	color: var(--primary-dark);
 	background: var(--primary-light);
@@ -99,6 +105,10 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	position: relative;
+}
+
+a {
+	display: inline-block;
 }
 
 .brand-color {
@@ -302,13 +312,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 80px;
-	gap: 30px;
+	gap: 48px 30px;
+	flex-wrap: wrap;
 }
 
 .bakers-item {
 	display: flex;
 	gap: 30px;
-	flex-basis: 600px;
+	flex-basis: calc((100% - 30px) / 2);
 }
 
 .bakers-image {
@@ -345,7 +356,7 @@ body {
 
 .formats-item {
 	background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);;
-	flex-basis: 350px;
+	flex-basis: calc((100% - 40px) / 3);
 	padding: 250px 24px 24px;
 	color: var(--primary-light);
 	font-size: 14px;
@@ -365,10 +376,18 @@ body {
 	color: var(--primary-light);
 }
 
+.slider {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 32px;
+}
+
 .slider-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-shrink: 0;
 	padding: 0;
 	width: 44px;
 	height: 44px;
@@ -393,6 +412,12 @@ body {
 	justify-content: space-between;
 	gap: 32px;
 	padding-bottom: 96px;
+}
+
+.contact-map-block {
+	flex-shrink: 0;
+	border: none;
+	border-radius: 16px;
 }
 
 /*Footer*/
@@ -432,8 +457,13 @@ body {
 	gap: 48px;
 }
 
+.footer-section .logo-link {
+	display: block;
+}
+
 .footer-item {
 	margin-bottom: 16px;
+	flex-grow: 1;
 }
 
 .footer-item:last-child {
@@ -442,6 +472,11 @@ body {
 
 .address-block {
 	flex-basis: 210px;
+}
+
+.social-item {
+	display: flex;
+	gap: 22px;
 }
 
 .footer-icon {
