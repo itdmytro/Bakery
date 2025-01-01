@@ -88,6 +88,7 @@
 				</button>
 				<ul class="formats-list">
 					<li class="formats-item">
+						<img class="formats-image" src="./images/format-walrus.jpg" alt="Пекарня у форматі Walrus">
 						<h3 class="formats-title" lang="en">
 							Walrus
 						</h3>
@@ -99,6 +100,7 @@
 						</ul>
 					</li>
 					<li class="formats-item">
+						<img class="formats-image" src="./images/format-horseshoe.jpg" alt="Пекарня у форматі Horseshoe">
 						<h3 class="formats-title" lang="en">
 							Horseshoe
 						</h3>
@@ -110,6 +112,7 @@
 						</ul>
 					</li>
 					<li class="formats-item">
+						<img class="formats-image" src="./images/format-handlebar.jpg" alt="Пекарня у форматі Handlebar">
 						<h3 class="formats-title" lang="en">
 							Handlebar
 						</h3>
@@ -132,12 +135,15 @@
 			<div class="contact-text-block">
 				<h2 class="section-title">Приєднуйся до мережі пекарень</h2>
 				<p>Заповни форму, щоб ми звʼязались з тобою!</p>
-				<form action="">
-					<input type="text">
-					<input type="text">
-					<input type="text">
-					<button type="submit">Замовити дзвінок</button>
-					<p>Натискаючи на кнопку я погоджуюсь з <a href="#" target="_blank">політикою конфіденційності</a></p>
+				<form class="contact-form" name="contact-form" autocomplete="on" novalidate>
+					<label class="visually-hidden" for="main-user-name">Ім'я</label>
+					<input class="form-input" id="main-user-name" type="text" placeholder="Ім'я">
+					<label class="visually-hidden" for="main-user-tel">Телефон</label>
+					<input class="form-input" id="main-user-tel" type="tel" placeholder="Телефон">
+					<label class="visually-hidden" for="main-user-email">Електронна пошта</label>
+					<input class="form-input" id="main-user-email" type="email" placeholder="Електронна пошта">
+					<button class="button" type="submit">Замовити дзвінок</button>
+					<p class="agree-text">Натискаючи на кнопку я погоджуюсь <a class="agree-link" href="#" target="_blank">з політикою конфіденційності</a></p>
 				</form>
 			</div>
 			<div class="contact-map-block">
@@ -210,7 +216,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="backdrop is-hidden">
+	<div class="backdrop">
 		<div class="modal">
 			<button class="modal-close" type="button">
 				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,14 +224,17 @@
 					<path d="M1 17L9 9L17 17" stroke="#31261A" stroke-width="2" stroke-linecap="round" />
 				</svg>
 			</button>
-			<h2 class="section-title">Замовити дзвінок</h2>
-			<p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-			<form action="">
-				<input type="text">
-				<input type="text">
-				<input type="text">
+			<h2 class="section-title center">Замовити дзвінок</h2>
+			<p class="modal-subtitle">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+			<form class="contact-form" name="modal-form" autocomplete="on" novalidate>
+				<label class="visually-hidden" for="modal-user-name"></label>
+				<input class="form-input" id="modal-user-name" type="text" name="user-name" placeholder="Ім'я">
+				<label class="visually-hidden" for="modal-user-tel"></label>
+				<input class="form-input" id="modal-user-tel" type="tel" name="user-tel" placeholder="Телефон">
+				<label class="visually-hidden" for="modal-user-email"></label>
+				<input class="form-input" id="modal-user-email" type="email" name="user-email" placeholder="Електронна пошта">
 				<button type="submit" class="button">Замовити дзвінок</button>
-				<p>Натискаючи на кнопку я погоджуюсь з <a href="#" target="_blank">політикою конфіденційності</a></p>
+				<p class="agree-text">Натискаючи на кнопку я погоджуюсь <a class="agree-link" href="#" target="_blank">з політикою конфіденційності</a></p>
 			</form>
 		</div>
 	</div>
