@@ -28,7 +28,7 @@
 					<a class="link" href="#contacts">Контакти</a>
 				</li>
 			</ul>
-			<button class="button" type="button">Замовити дзвінок</button>
+			<button class="button modal-open" type="button">Замовити дзвінок</button>
 		</nav>
 	</header>
 	<main>
@@ -151,17 +151,6 @@
 				</iframe>
 			</div>
 		</section>
-		<section class="section visually-hidden">
-			<h2 class="section-title">Замовити дзвінок</h2>
-			<p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-			<form action="">
-				<input type="text">
-				<input type="text">
-				<input type="text">
-				<button type="submit">Замовити дзвінок</button>
-				<p>Натискаючи на кнопку я погоджуюсь з <a href="#" target="_blank">політикою конфіденційності</a></p>
-			</form>
-		</section>
 	</main>
 	<footer class="footer">
 		<div class="section footer-section">
@@ -221,5 +210,26 @@
 			</div>
 		</div>
 	</footer>
+	<div class="backdrop is-hidden">
+		<div class="modal">
+			<button class="modal-close" type="button">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1L9 9L17 1" stroke="#31261A" stroke-width="2" stroke-linecap="round" />
+					<path d="M1 17L9 9L17 17" stroke="#31261A" stroke-width="2" stroke-linecap="round" />
+				</svg>
+			</button>
+			<h2 class="section-title">Замовити дзвінок</h2>
+			<p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+			<form action="">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<button type="submit" class="button">Замовити дзвінок</button>
+				<p>Натискаючи на кнопку я погоджуюсь з <a href="#" target="_blank">політикою конфіденційності</a></p>
+			</form>
+		</div>
+	</div>
+
+	<script src="./js/modal.js"></script>
 </body>
 </html>
