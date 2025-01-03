@@ -1,0 +1,21 @@
+.traditions-section {
+	display: flex;
+	justify-content: space-between;
+	gap: 36px;
+}
+
+.traditions-text-block {
+	max-width: 710px;
+}
+
+.section-title {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.traditions-image {
+	display: block;
+	max-height: 470px;
+	border-radius: 400px 400px 0 0;
+}
