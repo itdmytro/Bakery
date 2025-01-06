@@ -3,10 +3,10 @@
 	justify-content: space-between;
 	gap: 32px;
 	padding-bottom: 96px;
-}
 
-.contact-map-block {
-	flex-shrink: 0;
-	border: none;
-	border-radius: 16px;
+	&__map-block {
+		flex-shrink: 0;
+		border: none;
+		border-radius: 16px;
+	}
 }

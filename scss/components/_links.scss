@@ -14,3 +14,26 @@
 .link:hover {
 	color: var(--primary-brand);
 }
+
+.address-link {
+	color: var(--primary-light);
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.address-link:hover {
+	color: var(--primary-brand);
+}
+
+.social-link {
+	margin-right: 22px;
+
+	&__icon {
+		fill: var(--primary-light);
+		transition: all 0.3s;
+	}
+	
+	&__icon:hover {
+		fill: var(--primary-brand);
+	}
+}

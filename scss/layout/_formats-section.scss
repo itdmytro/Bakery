@@ -3,41 +3,40 @@
 	justify-content: center;
 	margin: 80px auto;
 	gap: 20px;
-}
 
-.formats-item {
-	background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
-	;
-	flex-basis: calc((100% - 40px) / 3);
-	padding: 250px 24px 24px;
-	color: var(--primary-light);
-	font-size: 14px;
-	border-radius: 16px;
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-.formats-image {
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: auto;
-}
-
-.formats-item:last-child {
-	margin: 0;
-}
-
-.formats-title {
-	font-size: 24px;
-	margin: 0 0 20px;
-}
-
-.formats-text {
-	color: var(--primary-light);
+	&__item {
+		background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+		;
+		flex-basis: calc((100% - 40px) / 3);
+		padding: 250px 24px 24px;
+		color: var(--primary-light);
+		font-size: 14px;
+		border-radius: 16px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	&__image {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: auto;
+	}
+	
+	&__item:last-child {
+		margin: 0;
+	}
+	
+	&__title {
+		font-size: 24px;
+		margin: 0 0 20px;
+	}
+	
+	&__text {
+		color: var(--primary-light);
+	}
 }
 
 .slider {
@@ -45,29 +44,29 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 32px;
-}
 
-.slider-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-shrink: 0;
-	padding: 0;
-	width: 44px;
-	height: 44px;
-	background-color: transparent;
-	border: 1px solid var(--primary-dark);
-	fill: var(--primary-dark);
-	border-radius: 50%;
-	cursor: pointer;
-	transition: all 0.3s;
-}
-
-.slider-button:last-child {
-	transform: rotate(180deg);
-}
-
-.slider-button:hover {
-	background-color: var(--primary-dark);
-	fill: var(--primary-light);
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		padding: 0;
+		width: 44px;
+		height: 44px;
+		background-color: transparent;
+		border: 1px solid var(--primary-dark);
+		fill: var(--primary-dark);
+		border-radius: 50%;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+	
+	&__button:last-child {
+		transform: rotate(180deg);
+	}
+	
+	&__button:hover {
+		background-color: var(--primary-dark);
+		fill: var(--primary-light);
+	}
 }
