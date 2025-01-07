@@ -12,4 +12,12 @@
 		max-height: 470px;
 		border-radius: 400px 400px 0 0;
 	}
+
+	&__text {
+		margin: 42px 0 0;
+
+		&--limited {
+			max-width: 340px;
+		}
+	}
 }
