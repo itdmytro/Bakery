@@ -9,4 +9,10 @@
 		border: none;
 		border-radius: 16px;
 	}
+
+	&__subtitle {
+		font-size: 18px;
+		color: var(--secondary-brand);
+		margin: 16px 0 42px;
+	}
 }

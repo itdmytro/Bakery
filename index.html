@@ -28,8 +28,20 @@
 					<a class="link" href="#contacts">Контакти</a>
 				</li>
 			</ul>
-			<button class="button modal-open" type="button">Замовити дзвінок</button>
+			<button class="header__button button js-modal-open" type="button">Замовити дзвінок</button>
+			<button class="header__burger js-burger-open" type="button">
+				<svg width="24px" height="24px">
+					<use href="./images/icons.svg#icon-burger"></use>
+				</svg>
+			</button>
 		</nav>
+		<div class="burger-menu">
+			<button class="burger-menu__close js-burger-close" type="button">
+				<svg class="burger-menu__close__icon" width="32px" height="32px">
+					<use href="./images/icons.svg#icon-modal-close"></use>
+				</svg>
+			</button>
+		</div>
 	</header>
 	<main>
 		<section class="hero-section">
@@ -45,17 +57,19 @@
 		</section>
 		<section class="section traditions-section" id="traditions">
 			<div class="traditions-section__text-block">
-				<h2 class="section__title"section__title-->Новий формат традицій</h2>
-				<p class="traditions-section__text">
-					<span class="brand-color uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність інгредієнтів.
-				</p>
-				<p class="traditions-section__text traditions-section__text--limited">
-					Ми працюємо як найвідоміші мережі — <span class="brand-color">5 хвилин і замовлення готове</span>. А ще у наших пекарень стильний дизайн та висока якість обслуговування!
-				</p>
+				<h2 class="section__title">Новий формат традицій</h2>
+				<div>
+					<p class="traditions-section__text">
+						<span class="brand-color uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність інгредієнтів.
+					</p>
+					<p class="traditions-section__text traditions-section__text--limited">
+						Ми працюємо як найвідоміші мережі — <br><span class="brand-color">5 хвилин і замовлення готове</span>. А ще у наших пекарень стильний дизайн та висока якість обслуговування!
+					</p>
+				</div>
 			</div>
 			<img class="traditions-section__image" src="./images/baker-with-bread.jpg" alt="Щасливий пекар везе хліб">
 		</section>
-		<section class="bakers-section section" id="bakers">
+		<!-- <section class="bakers-section section" id="bakers">
 			<h2 class="section__title bakers-section__title section__title--centered">Наші найкращі <span class="brand-color-dark">шеф -кухарі</span></h2>
 			<ul class="bakers-list">
 				<li class="bakers-list__item">
@@ -77,8 +91,8 @@
 					</div>
 				</li>
 			</ul>
-		</section>
-		<section class="section" id="formats">
+		</section> -->
+		<!-- <section class="section" id="formats">
 			<h2 class="section__title section__title--centered">Формати</h2>
 			<div class="slider">
 				<button class="slider__button" type="button">
@@ -130,20 +144,23 @@
 					</svg>
 				</button>
 			</div>
-		</section>
-		<section class="section contact-section" id="contacts">
+		</section> -->
+		<!-- <section class="section contact-section" id="contacts">
 			<div>
-				<h2 class="section__title"section__title-->Приєднуйся до мережі пекарень</h2>
-				<p>Заповни форму, щоб ми звʼязались з тобою!</p>
-				<form class="contact-form" name="contact-form" autocomplete="on" novalidate>
+				<h2 class="section__title">Приєднуйся до мережі пекарень</h2>
+				<p class="contact-section__subtitle">Заповни форму, щоб ми звʼязались з тобою!</p>
+				<form class="form" name="contact-form" autocomplete="on" novalidate>
 					<label class="visually-hidden" for="main-user-name">Ім'я</label>
-					<input class="form-input" id="main-user-name" type="text" placeholder="Ім'я">
+					<input class="form__input" id="main-user-name" type="text" placeholder="Ім'я">
 					<label class="visually-hidden" for="main-user-tel">Телефон</label>
-					<input class="form-input" id="main-user-tel" type="tel" placeholder="Телефон">
+					<input class="form__input" id="main-user-tel" type="tel" placeholder="Телефон">
 					<label class="visually-hidden" for="main-user-email">Електронна пошта</label>
-					<input class="form-input" id="main-user-email" type="email" placeholder="Електронна пошта">
+					<input class="form__input" id="main-user-email" type="email" placeholder="Електронна пошта">
 					<button class="button" type="submit">Замовити дзвінок</button>
-					<p class="agree-text">Натискаючи на кнопку я погоджуюсь <a class="agree-link" href="#" target="_blank">з політикою конфіденційності</a></p>
+					<p class="form__agree-text">Натискаючи на кнопку я погоджуюсь 
+						<a class="form__agree-text__link" href="#" target="_blank">
+							з політикою конфіденційності
+						</a></p>
 				</form>
 			</div>
 			<div class="contact-section__map-block">
@@ -156,9 +173,9 @@
 					referrerpolicy="no-referrer-when-downgrade">
 				</iframe>
 			</div>
-		</section>
+		</section> -->
 	</main>
-	<footer class="footer">
+	<!-- <footer class="footer">
 		<div class="section footer__section">
 			<div>
 				<a class="logo-link" href="#">
@@ -215,30 +232,33 @@
 				<p class="footer__copyright">&copy; 2022 Дані захищені</p>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 	<div class="backdrop is-hidden">
 		<div class="modal">
-			<button class="modal-close" type="button">
-				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M1 1L9 9L17 1" stroke="#31261A" stroke-width="2" stroke-linecap="round" />
-					<path d="M1 17L9 9L17 17" stroke="#31261A" stroke-width="2" stroke-linecap="round" />
-				</svg>
+			<button class="modal__close-btn js-modal-close" type="button">
+				<svg class="modal__close-btn__icon" width="32px" height="32px">
+					<use href="./images/icons.svg#icon-modal-close"></use>
+				</svg>				
 			</button>
 			<h2 class="section__title section__title--centered">Замовити дзвінок</h2>
-			<p class="modal-subtitle">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-			<form class="contact-form" name="modal-form" autocomplete="on" novalidate>
+			<p class="modal__subtitle">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+			<form class="form" name="modal-form" autocomplete="on" novalidate>
 				<label class="visually-hidden" for="modal-user-name"></label>
-				<input class="form-input" id="modal-user-name" type="text" name="user-name" placeholder="Ім'я">
+				<input class="form__input form__input--increased" id="modal-user-name" type="text" name="user-name" placeholder="Ім'я">
 				<label class="visually-hidden" for="modal-user-tel"></label>
-				<input class="form-input" id="modal-user-tel" type="tel" name="user-tel" placeholder="Телефон">
+				<input class="form__input form__input--increased" id="modal-user-tel" type="tel" name="user-tel" placeholder="Телефон">
 				<label class="visually-hidden" for="modal-user-email"></label>
-				<input class="form-input" id="modal-user-email" type="email" name="user-email" placeholder="Електронна пошта">
+				<input class="form__input form__input--increased" id="modal-user-email" type="email" name="user-email" placeholder="Електронна пошта">
 				<button type="submit" class="button">Замовити дзвінок</button>
-				<p class="agree-text">Натискаючи на кнопку я погоджуюсь <a class="agree-link" href="#" target="_blank">з політикою конфіденційності</a></p>
+				<p class="form__agree-text form__agree-text--increased">Натискаючи на кнопку я погоджуюсь 
+					<a class="form__agree-text__link" href="#" target="_blank">
+						з політикою конфіденційності
+					</a></p>
 			</form>
 		</div>
 	</div>
 
 	<script src="./js/modal.js"></script>
+	<script src="./js/burger-menu.js"></script>
 </body>
 </html>

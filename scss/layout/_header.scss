@@ -6,16 +6,50 @@
 
 	&__nav {
 		max-width: 1250px;
-		padding: 32px;
+		padding: 16px 20px;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media screen and (min-width: $bp-tablet) {
+			padding: 32px;
+		}
 	}
 	
 	&__menu {
-		display: flex;
-		gap: 64px;
-		margin: 0 24px;
+		display: none;
+
+		@media screen and (min-width: $bp-desktop) {
+			display: flex;
+			gap: 64px;
+			margin: 0 24px;
+		}
+	}
+
+	&__burger {
+		display: block;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		fill: var(--primary-light);
+		transition: fill 0.3s;
+
+		&:hover  {
+			fill: var(--primary-brand);
+		}
+
+		@media screen and (min-width: $bp-desktop) {
+			display: none;
+		}
+	}
+
+	&__button {
+		display: none;
+		
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+		}
 	}
 }
