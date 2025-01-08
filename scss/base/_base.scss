@@ -8,14 +8,19 @@ body {
 	color: var(--primary-dark);
 	background: var(--primary-light);
 	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
+	font-size: 16px;
+	font-weight: 300;
 	line-height: 1.5;
 	position: relative;
+
+	@media screen and (min-width: $bp-tablet) {
+		font-size: 18px;
+	}
 }
 
 a {
 	display: inline-block;
+	font-weight: 400;
 }
 
 .visually-hidden {

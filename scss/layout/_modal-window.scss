@@ -33,6 +33,23 @@
 	position: relative;
 	overflow-y: auto;
 
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 180px;
+		height: 240px;
+		background-image: url(../../images/modal-bread.png);
+		background-size: contain;
+
+		@media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				background-image: url(../../images/modal-bread@2x.png);
+			}
+	}
+
 	&__close-btn {
 		position: absolute;
 		right: 40px;

@@ -193,14 +193,20 @@ body {
   color: var(--primary-dark);
   background: var(--primary-light);
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
   position: relative;
+}
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 a {
   display: inline-block;
+  font-weight: 400;
 }
 
 .visually-hidden {
@@ -260,6 +266,7 @@ a {
 }
 
 .button {
+  display: block;
   background-color: var(--primary-brand);
   color: var(--primary-light);
   padding: 16px 32px;
@@ -388,8 +395,9 @@ a {
 .burger-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
+  max-width: 800px;
   height: 100%;
   background-color: var(--primary-light);
   -webkit-transform: translateX(100%);
@@ -409,7 +417,11 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 999;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .burger-menu::after {
+    background-image: url(../../images/modal-bread@2x.png);
+  }
 }
 .burger-menu.is-open {
   -webkit-transform: translate(0);
@@ -503,8 +515,13 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 270px 0;
+  padding: 124px 0 32px;
   position: relative;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../../images/hero-image@2x.jpg);
+  }
 }
 .hero-section::before {
   content: "";
@@ -525,9 +542,24 @@ a {
   position: relative;
   padding: 0 32px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
   .hero-section__main-title {
+    line-height: 1.5;
     font-size: 128px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding: 270px 0;
+  }
+}
+.hero-section__button {
+  margin: 48px auto 0;
+  position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .hero-section__button {
+    display: none;
   }
 }
 
@@ -559,6 +591,7 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     background-color: transparent;
+    padding: 0;
   }
 }
 .advantages-section__item {
@@ -594,15 +627,12 @@ a {
 .traditions-section__image {
   display: none;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 769px) {
   .traditions-section__image {
     display: block;
     max-height: 470px;
     border-radius: 400px 400px 0 0;
   }
-}
-.traditions-section__text {
-  font-size: 16px;
 }
 .traditions-section__text:first-child {
   margin: 24px 0 16px;
@@ -617,7 +647,6 @@ a {
 }
 @media screen and (min-width: 769px) {
   .traditions-section__text {
-    font-size: 18px;
     margin: 42px 0 0;
   }
 }
@@ -629,13 +658,15 @@ a {
   position: relative;
   margin: 0 auto;
 }
-.bakers-section__title::before, .bakers-section__title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 352px;
-  bottom: 24px;
-  border-bottom: 2px solid var(--secondary-light);
+@media screen and (min-width: 1280px) {
+  .bakers-section__title::before, .bakers-section__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 352px;
+    bottom: 24px;
+    border-bottom: 2px solid var(--secondary-light);
+  }
 }
 .bakers-section__title::before {
   left: 0;
@@ -800,6 +831,11 @@ a {
   background-size: cover;
   position: relative;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(../../images/footer-bg@2x.png);
+  }
+}
 .footer::before, .footer::after {
   content: "";
   background-size: contain;
@@ -812,11 +848,21 @@ a {
   width: 180px;
   height: 120px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer::before {
+    background-image: url(../../images/footer-bread-1@2x.png);
+  }
+}
 .footer::after {
   background-image: url(../images/footer-bread-2.png);
   right: 0;
   width: 380px;
   height: 190px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer::after {
+    background-image: url(../../images/footer-bread-2@2x.png);
+  }
 }
 .footer__section {
   padding: 32px 24px;
@@ -891,6 +937,21 @@ a {
   padding: 40px;
   position: relative;
   overflow-y: auto;
+}
+.modal::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  height: 240px;
+  background-image: url(../../images/modal-bread.png);
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .modal::after {
+    background-image: url(../../images/modal-bread@2x.png);
+  }
 }
 .modal__close-btn {
   position: absolute;

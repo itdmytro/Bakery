@@ -10,12 +10,14 @@
 	
 	&__title::before,
 	&__title::after {
-		content: '';
-		position: absolute;
-		display: block;
-		width: 352px;
-		bottom: 24px;
-		border-bottom: 2px solid var(--secondary-light);
+		@media screen and (min-width: $bp-desktop) {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 352px;
+			bottom: 24px;
+			border-bottom: 2px solid var(--secondary-light);
+		}
 	}
 	
 	&__title::before {

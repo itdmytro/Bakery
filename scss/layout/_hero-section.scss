@@ -3,8 +3,14 @@
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
-	padding: 270px 0;
+	padding: 124px 0 32px;
 	position: relative;
+
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image: url(../../images/hero-image@2x.jpg);
+		}
 
 	&::before {
 		content: '';
@@ -25,9 +31,23 @@
 		text-align: center;
 		position: relative;
 		padding: 0 32px;
-
-		@media screen and (min-width: $bp-tablet) {
+		
+		@media screen and (min-width: $bp-desktop) {
+			line-height: 1.5;
 			font-size: 128px;
+		}
+	}
+
+	@media screen and (min-width: $bp-desktop) {
+		padding: 270px 0;
+	}
+
+	&__button {
+		margin: 48px auto 0;
+		position: relative;
+
+		@media screen and (min-width: $bp-desktop) {
+			display: none;
 		}
 	}
 }
