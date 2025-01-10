@@ -38,6 +38,7 @@
 
 	&__item {
 		display: flex;
+		align-items: flex-start;
 		gap: 30px;
 		flex-basis: calc((100% - 30px) / 2);
 	}
