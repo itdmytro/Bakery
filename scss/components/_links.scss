@@ -9,6 +9,13 @@
 .link {
 	color: var(--primary-light);
 	transition: all 0.5s;
+	font-size: 14px;
+	font-weight: 300;
+
+	@media screen and (min-width: $bp-tablet) {
+		font-size: 18px;
+		font-weight: 400;
+	}
 }
 
 .link:hover {
@@ -17,8 +24,14 @@
 
 .address-link {
 	color: var(--primary-light);
-	font-size: 16px;
+	font-size: 14px;
+	font-weight: 300;
 	transition: all 0.3s;
+
+	@media screen and (min-width: $bp-tablet) {
+		font-size: 16px;
+		font-weight: 400;
+	}
 }
 
 .address-link:hover {
@@ -27,6 +40,9 @@
 
 .social-link {
 	margin-right: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	&__icon {
 		fill: var(--primary-light);
@@ -35,5 +51,15 @@
 	
 	&__icon:hover {
 		fill: var(--primary-brand);
+	}
+}
+
+.logo {
+	width: 72px;
+	height: 38px;
+
+	@media screen and (min-width: $bp-tablet) {
+		width: 114px;
+		height: 56px;
 	}
 }

@@ -1,19 +1,25 @@
 .form {
 	width: 100%;
-	max-width: 605px;
 	margin: 0 auto;
 	text-align: center;
 
 	&__input {
 		display: block;
-		margin-bottom: 24px;
+		margin-bottom: 16px;
 		border: 1px solid var(--secondary-dark);
 		border-radius: 8px;
-		padding: 16px 42px;
+		padding: 8px 24px;
 		width: 100%;
 		background: var(--primary-light);
 		color: var(--secondary-dark);
 		font-size: 16px;
+		font-weight: 400;
+
+		@media screen and (min-width: $bp-tablet) {
+			margin-bottom: 24px;
+			font-weight: 300;
+			padding: 16px 42px;
+		}
 	
 		&--increased {
 			margin-bottom: 32px;
@@ -35,12 +41,21 @@
 		}
 	}
 
+	&__button {
+		margin: 0 auto;
+	}
+
 	&__agree-text {
+		display: none;
 		font-size: 12px;
 		color: var(--primary-dark);
 		text-align-last: center;
 		margin: 16px auto 0;
 		max-width: 215px;
+
+		@media screen and (min-width: $bp-tablet) {
+			display: block;
+		}
 	
 		&--increased {
 			margin-top: 24px;

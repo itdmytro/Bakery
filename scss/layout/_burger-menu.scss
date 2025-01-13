@@ -3,12 +3,13 @@
     top: 0;
     right: 0;
     width: 100%;
-	max-width: 800px;
+	max-width: 450px;
     height: 100%;
     background-color: var(--primary-light);
     transform: translateX(100%);
     transition: transform 0.3s;
     z-index: 1;
+    padding: 16px 24px;
 
     &::after {
         content: '';
@@ -49,5 +50,30 @@
 
     @media screen and (min-width: $bp-desktop) {
         display: none;
+    }
+
+    &__logo {
+        margin-bottom: 32px;
+    }
+
+    &__logo svg * {
+        fill: var(--primary-dark);
+        transition: fill 0.3s;
+    }
+
+    &__logo:hover svg * {
+        fill: var(--primary-brand);
+    }
+
+    &__link {
+        color: var(--primary-dark);
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 16px;
+        transition: color 0.3s;
+    }
+
+    &__link:hover {
+        color: var(--primary-brand);
     }
 }

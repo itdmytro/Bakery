@@ -68,6 +68,10 @@
 			fill: var(--primary-brand);
 		}
 	}
+
+	&__form {
+		max-width: 605px;
+	}
 	
 	&__subtitle {
 		color: var(--secondary-brand);
