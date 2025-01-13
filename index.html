@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Сучасна пекарня</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 	<header class="header">
@@ -96,50 +97,106 @@
 		<section class="section" id="formats">
 			<h2 class="section__title section__title--centered">Формати</h2>
 			<div class="slider">
-				<button class="slider__button" type="button">
+				<button class="slider__button prev" type="button">
 					<svg width="16" height="16">
 						<use href="./images/icons.svg#icon-arrow"></use>
 					</svg>
 				</button>
-				<ul class="formats-list">
-					<li class="formats-list__item">
-						<img class="formats-list__image" src="./images/format-walrus.jpg" alt="Пекарня у форматі Walrus">
-						<h3 class="formats-list__title" lang="en">
-							Walrus
-						</h3>
-						<ul>
-							<li>Площа: до 120 м2</li>
-							<li>Меню: розширене меню</li>
-							<li>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</li>
-							<li>Посадкові місця: є </li>
-						</ul>
-					</li>
-					<li class="formats-list__item">
-						<img class="formats-list__image" src="./images/format-horseshoe.jpg" alt="Пекарня у форматі Horseshoe">
-						<h3 class="formats-list__title" lang="en">
-							Horseshoe
-						</h3>
-						<ul>
-							<li>Площа: до 25 м2</li>
-							<li>Меню: найпопулярніші позиції меню</li>
-							<li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
-							<li>Посадкові місця: відсутні </li>
-						</ul>
-					</li>
-					<li class="formats-list__item">
-						<img class="formats-list__image" src="./images/format-handlebar.jpg" alt="Пекарня у форматі Handlebar">
-						<h3 class="formats-list__title" lang="en">
-							Handlebar
-						</h3>
-						<ul>
-							<li>Площа: до 15 м2</li>
-							<li>Меню: найпопулярніші позиції меню</li>
-							<li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
-							<li>Посадкові місця: відсутні </li>
-						</ul>
-					</li>
-				</ul>
-				<button class="slider__button" type="button">
+				<div class="formats-list swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<div class="formats-list__item">
+								<img class="formats-list__image" src="./images/format-walrus.jpg" alt="Пекарня у форматі Walrus">
+								<h3 class="formats-list__title" lang="en">
+									Walrus
+								</h3>
+								<ul>
+									<li>Площа: до 120 м2</li>
+									<li>Меню: розширене меню</li>
+									<li>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</li>
+									<li>Посадкові місця: є </li>
+								</ul>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="formats-list__item">
+								<img class="formats-list__image" src="./images/format-horseshoe.jpg" alt="Пекарня у форматі Horseshoe">
+								<h3 class="formats-list__title" lang="en">
+									Horseshoe
+								</h3>
+								<ul>
+									<li>Площа: до 25 м2</li>
+									<li>Меню: найпопулярніші позиції меню</li>
+									<li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
+									<li>Посадкові місця: відсутні </li>
+								</ul>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="formats-list__item">
+								<img class="formats-list__image" src="./images/format-handlebar.jpg" alt="Пекарня у форматі Handlebar">
+								<h3 class="formats-list__title" lang="en">
+									Handlebar
+								</h3>
+								<ul>
+									<li>Площа: до 15 м2</li>
+									<li>Меню: найпопулярніші позиції меню</li>
+									<li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+									<li>Посадкові місця: відсутні </li>
+								</ul>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="formats-list__item">
+								<img class="formats-list__image" src="./images/format-walrus.jpg" alt="Пекарня у форматі Walrus">
+								<h3 class="formats-list__title" lang="en">
+									Walrus
+								</h3>
+								<ul>
+									<li>Площа: до 120 м2</li>
+									<li>Меню: розширене меню</li>
+									<li>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</li>
+									<li>Посадкові місця: є </li>
+								</ul>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="formats-list__item">
+								<img class="formats-list__image" src="./images/format-horseshoe.jpg" alt="Пекарня у форматі Horseshoe">
+								<h3 class="formats-list__title" lang="en">
+									Horseshoe
+								</h3>
+								<ul>
+									<li>Площа: до 25 м2</li>
+									<li>Меню: найпопулярніші позиції меню</li>
+									<li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
+									<li>Посадкові місця: відсутні </li>
+								</ul>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="formats-list__item">
+								<img class="formats-list__image" src="./images/format-handlebar.jpg" alt="Пекарня у форматі Handlebar">
+								<h3 class="formats-list__title" lang="en">
+									Handlebar
+								</h3>
+								<ul>
+									<li>Площа: до 15 м2</li>
+									<li>Меню: найпопулярніші позиції меню</li>
+									<li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+									<li>Посадкові місця: відсутні </li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="pagination">
+						<button class="pagination__button" type="button" aria-label="Go to slide 1"></button>
+						<button class="pagination__button" type="button" aria-label="Go to slide 2"></button>
+						<button class="pagination__button" type="button" aria-label="Go to slide 3"></button>
+						<button class="pagination__button" type="button" aria-label="Go to slide 4"></button>
+					</div>
+				</div>
+				<button class="slider__button next" type="button">
 					<svg width="16" height="16">
 						<use href="./images/icons.svg#icon-arrow"></use>
 					</svg>
@@ -261,5 +318,7 @@
 
 	<script src="./js/modal.js"></script>
 	<script src="./js/burger-menu.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./js/swiper.js"></script>
 </body>
 </html>
