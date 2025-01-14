@@ -9,7 +9,7 @@
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-			background-image: url(../../images/footer-bg@2x.png);
+			background-image: url(../images/footer-bg@2x.png);
 		}
 
 	&::before,
@@ -25,7 +25,7 @@
 	}
 
 	&::before {
-		background-image: url(../../images/mobile-footer-bread-1.png);
+		background-image: url(../images/mobile-footer-bread-1.png);
 		width: 92px;
 		height: 196px;
 		top: 48px;
@@ -33,7 +33,7 @@
 		@media (min-device-pixel-ratio: 2),
 				(min-resolution: 192dpi),
 				(min-resolution: 2dppx) {
-					background-image: url(../../images/mobile-footer-bread-1@2x.png);
+					background-image: url(../images/mobile-footer-bread-1@2x.png);
 		}
 
 		@media screen and (min-width: $bp-tablet) {
@@ -45,13 +45,13 @@
 			@media (min-device-pixel-ratio: 2),
 				(min-resolution: 192dpi),
 				(min-resolution: 2dppx) {
-					background-image: url(../../images/footer-bread-1@2x.png);
+					background-image: url(../images/footer-bread-1@2x.png);
 			}
 		}
 	}
 
 	&::after {
-		background-image: url(../../images/mobile-footer-bread-2.png);
+		background-image: url(../images/mobile-footer-bread-2.png);
 		width: 120px;
 		height: 112px;
 		background-position: bottom;
@@ -61,7 +61,7 @@
 		@media (min-device-pixel-ratio: 2),
 				(min-resolution: 192dpi),
 				(min-resolution: 2dppx) {
-				background-image: url(../../images/mobile-footer-bread-2@2x.png);
+				background-image: url(../images/mobile-footer-bread-2@2x.png);
 		}
 
 		@media screen and (min-width: $bp-tablet) {
@@ -72,7 +72,7 @@
 			@media (min-device-pixel-ratio: 2),
 				(min-resolution: 192dpi),
 				(min-resolution: 2dppx) {
-					background-image: url(../../images/footer-bread-2@2x.png);
+					background-image: url(../images/footer-bread-2@2x.png);
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 .hero-section {
-	background: url(../../images/hero-image.jpg);
+	background: url(../images/hero-image.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -9,7 +9,7 @@
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-			background-image: url(../../images/hero-image@2x.jpg);
+			background-image: url(../images/hero-image@2x.jpg);
 		}
 
 	&::before {
