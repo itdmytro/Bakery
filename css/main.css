@@ -358,7 +358,12 @@ img {
   }
 }
 .form__input--increased {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 769px) {
+  .form__input--increased {
+    margin-bottom: 32px;
+  }
 }
 .form__input::-webkit-input-placeholder {
   color: var(--secondary-dark);
@@ -496,7 +501,7 @@ img {
 .burger-menu__close {
   position: absolute;
   top: 16px;
-  right: 24px;
+  right: 16px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -1112,6 +1117,11 @@ img {
   bottom: 0;
   right: 0;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer::after {
+    background-image: url(../../images/mobile-footer-bread-2@2x.png);
+  }
+}
 @media screen and (min-width: 769px) {
   .footer::after {
     background-image: url(../images/footer-bread-2.png);
@@ -1239,7 +1249,12 @@ img {
           justify-content: center;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  padding: 48px;
+  padding: 24px;
+}
+@media screen and (min-width: 769px) {
+  .backdrop {
+    padding: 48px;
+  }
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -1256,9 +1271,14 @@ img {
   max-height: 880px;
   background-color: var(--primary-light);
   border-radius: 32px;
-  padding: 40px;
+  padding: 24px;
   position: relative;
   overflow-y: auto;
+}
+@media screen and (min-width: 769px) {
+  .modal {
+    padding: 40px;
+  }
 }
 .modal::after {
   content: "";
@@ -1269,6 +1289,12 @@ img {
   height: 240px;
   background-image: url(../../images/modal-bread.png);
   background-size: contain;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .modal::after {
+    display: block;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .modal::after {
@@ -1277,12 +1303,18 @@ img {
 }
 .modal__close-btn {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 16px;
+  top: 16px;
   background: none;
   padding: 0;
   border: none;
   cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .modal__close-btn {
+    right: 40px;
+    top: 40px;
+  }
 }
 .modal__close-btn__icon {
   fill: var(--primary-dark);
@@ -1298,9 +1330,16 @@ img {
 .modal__subtitle {
   color: var(--secondary-brand);
   text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 8px 0 72px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 8px 0 24px;
+}
+@media screen and (min-width: 769px) {
+  .modal__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 72px;
+  }
 }
 .modal::-webkit-scrollbar {
   width: 6px;
