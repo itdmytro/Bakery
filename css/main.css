@@ -1071,7 +1071,7 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer {
-    background-image: url(../../images/footer-bg@2x.png);
+    background-image: url(../images/footer-bg@2x.png);
   }
 }
 .footer::before, .footer::after {
@@ -1086,14 +1086,14 @@ img {
   }
 }
 .footer::before {
-  background-image: url(../../images/mobile-footer-bread-1.png);
+  background-image: url(../images/mobile-footer-bread-1.png);
   width: 92px;
   height: 196px;
   top: 48px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer::before {
-    background-image: url(../../images/mobile-footer-bread-1@2x.png);
+    background-image: url(../images/mobile-footer-bread-1@2x.png);
   }
 }
 @media screen and (min-width: 769px) {
@@ -1106,11 +1106,11 @@ img {
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .footer::before {
-    background-image: url(../../images/footer-bread-1@2x.png);
+    background-image: url(../images/footer-bread-1@2x.png);
   }
 }
 .footer::after {
-  background-image: url(../../images/mobile-footer-bread-2.png);
+  background-image: url(../images/mobile-footer-bread-2.png);
   width: 120px;
   height: 112px;
   background-position: bottom;
@@ -1119,7 +1119,7 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer::after {
-    background-image: url(../../images/mobile-footer-bread-2@2x.png);
+    background-image: url(../images/mobile-footer-bread-2@2x.png);
   }
 }
 @media screen and (min-width: 769px) {
@@ -1131,7 +1131,7 @@ img {
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .footer::after {
-    background-image: url(../../images/footer-bread-2@2x.png);
+    background-image: url(../images/footer-bread-2@2x.png);
   }
 }
 .footer__section {
